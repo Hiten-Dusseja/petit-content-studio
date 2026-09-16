@@ -1,0 +1,33 @@
+.image-uploader {
+  margin-bottom: 1.5rem;
+}
+
+.uploader-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.upload-btn {
+  padding: 0.625rem 1rem;
+}
+
+.uploader-url-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+
+.uploader-url-form input {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .uploader-url-form {
+    flex-direction: column;
+  }
+  .uploader-url-form button {
+    width: 100%;
+  }
+}

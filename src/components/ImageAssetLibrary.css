@@ -1,0 +1,92 @@
+.asset-lib h4 {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.asset-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+
+.asset-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.asset-card.failed {
+  border-color: var(--error);
+}
+
+.asset-preview {
+  aspect-ratio: 16 / 10;
+  background: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.asset-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.asset-loading, .asset-failed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+}
+
+.asset-info {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.asset-type {
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.asset-section {
+  color: var(--text-secondary);
+}
+
+.asset-status {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 99px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.asset-status.ready { background: #dcfce7; color: #166534; }
+.asset-status.generating { background: #dbeafe; color: #1e40af; }
+.asset-status.failed { background: #fee2e2; color: #991b1b; }
+
+.asset-actions {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .asset-grid { grid-template-columns: 1fr; }
+}

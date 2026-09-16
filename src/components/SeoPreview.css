@@ -1,0 +1,35 @@
+.seo-preview {
+  margin-bottom: 1.5rem;
+}
+
+.seo-title {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.seo-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.seo-field label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.seo-value {
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin: 0;
+}
+
+.seo-desc {
+  font-weight: 400;
+  line-height: 1.5;
+}
